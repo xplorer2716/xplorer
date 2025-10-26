@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://github.com/xplorer2716/XplorerEditor.site/sitemap.xml
+# Crawl-delay can be added if the host needs it; keep default for now.
