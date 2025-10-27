@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://xplorer2716.github.io/XplorerEditor.site//</loc>
+    <loc>https://xplorer2716.github.io/XplorerEditor.site/</loc>
     <priority>1.00</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://xplorer2716.github.io/XplorerEditor.site//index_files/XplorerFullScreenSmall.jpg</loc>
+    <loc>https://xplorer2716.github.io/XplorerEditor.site/index_files/XplorerFullScreenSmall.jpg</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://xplorer2716.github.io/XplorerEditor.site//index_files/header.jpg</loc>
+    <loc>https://xplorer2716.github.io/XplorerEditor.site/index_files/header.jpg</loc>
     <priority>0.5</priority>
   </url>
 </urlset>
