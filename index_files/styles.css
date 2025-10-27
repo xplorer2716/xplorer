@@ -200,3 +200,37 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Videos grid styles */
+.videos-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* une colonne : vidéos l'une sous l'autre */
+    gap: 24px;
+    margin-top: 20px;
+}
+.video-caption {
+    margin-top: 8px;
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-size: 0.95rem;
+}
+@media (max-width: 768px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer styling and liseret (thin border) */
+.site-footer {
+    background-color: #373536; /* same tone as header */
+    color: #ffffff;
+    padding: 30px 0;
+    border-top: 1px solid var(--divider-color); /* liseret */
+}
+.site-footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.site-footer .container {
+    padding: 0 20px;
+}
