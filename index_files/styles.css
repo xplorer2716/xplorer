@@ -1,6 +1,7 @@
 /* Apple-inspired stylesheet for Xplorer */
 :root {
     --background-color: #f5f5f7;
+    --videos-section-bg: #f5f5f7; /* background used for the videos section and table headers */
     --card-background-color: #ffffff;
     --primary-text-color: #1d1d1f;
     --secondary-text-color: #6e6e73;
@@ -207,6 +208,56 @@ body {
     grid-template-columns: 1fr; /* une colonne : vidéos l'une sous l'autre */
     gap: 24px;
     margin-top: 20px;
+}
+
+/* Give the videos section an explicit background so the table header can match it */
+.videos-section {
+    background-color: var(--videos-section-bg);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Resources section styles */
+.resources-section {
+    padding: 40px 0;
+    background-color: #fff;
+    border-top: 1px solid var(--divider-color);
+}
+.resource-subsection {
+    margin: 30px 0;
+}
+.resources-section .description-text {
+    /* Ensure resource description paragraphs align to the left edge of the table
+       and take the full available width inside the container */
+    max-width: 100%;
+    margin: 0 0 1em 0;
+    text-align: left;
+}
+.resource-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+.resource-table th,
+.resource-table td {
+    border: 1px solid var(--divider-color);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+.resource-table thead th {
+    background-color: var(--videos-section-bg);
+    color: var(--primary-text-color);
+    font-weight: 700;
+}
+.resource-img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+.download-link {
+    color: var(--accent-color);
+    font-weight: 600;
 }
 .video-caption {
     margin-top: 8px;
