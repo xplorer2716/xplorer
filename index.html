@@ -214,7 +214,6 @@
                                 <td><b>Xpander</b> owner's manual</td>
                                 <td><a href="https://xplorer2716.github.io/XplorerEditor.site/files/OberheimXpander-OwnersManual.rar"
                                         class="download-link" title="Xpander owner's manual">link</a></td>
-
                             </tr>
                             <tr>
                                 <td><b>Xpander</b> service manual</td>
@@ -227,15 +226,16 @@
                                         class="download-link" title="Matrix-12 owner's manual">link</a></td>
                             </tr>
                             <tr>
-                                <td><b>Matrix-12</b> preliminay operation guide</td>
+                                <td><b>Matrix-12</b> preliminary operation guide</td>
                                 <td><a href="https://xplorer2716.github.io/XplorerEditor.site/files/files/matrix12preliminaryoperationguide.rar"
-                                        class="download-link" title="Matrix-12 preliminary operation guide">link</a></td>
+                                        class="download-link" title="Matrix-12 preliminary operation guide">link</a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                    <div class="resource-subsection">
+                <div class="resource-subsection">
                     <h3 class="subsection-headline">Hardware</h3>
                     <p class="description-text">Docs and infos about Xpander/Matrix-12 hardware</p>
 
@@ -253,7 +253,6 @@
                                 <td><b>CEM 3372</b> (VCF) datasheet</td>
                                 <td><a href="https://xplorer2716.github.io/XplorerEditor.site/files/Xpander CEM 3372.rar"
                                         class="download-link" title="CEM 3372 (VCF) datasheet">link</a></td>
-
                             </tr>
                             <tr>
                                 <td><b>CEM 3374</b> (VCO) datasheet</td>
@@ -266,14 +265,15 @@
                                         class="download-link" title="SIPEX HS3140/SP7514 14 bits DAC">link</a></td>
                             </tr>
                             <tr>
-                             <td><b>SIPEX HS3140/SP7514</b> 14 bits DAC (alt)</td>
+                                <td><b>SIPEX HS3140/SP7514</b> 14 bits DAC (alt)</td>
                                 <td><a href="https://xplorer2716.github.io/XplorerEditor.site/files/sipex 14 bits dac - hs3140c3q_bis.pdf"
-                                        class="download-link" title="SIPEX HS3140/SP7514 14 bits DAC (alt)">link</a></td>
+                                        class="download-link" title="SIPEX HS3140/SP7514 14 bits DAC (alt)">link</a>
+                                </td>
                             </tr>
-                         <td><b>FG405A2</b> VFD Diplay</td>
-                                <td><a href="https://xplorer2716.github.io/XplorerEditor.site/files/Xpander_Display_Spec_FG405A2.rar"
-                                        class="download-link" title="FG405A2 Display">link</a></td>
-                            </tr>                            
+                            <td><b>FG405A2</b> VFD Display</td>
+                            <td><a href="https://xplorer2716.github.io/XplorerEditor.site/files/Xpander_Display_Spec_FG405A2.rar"
+                                    class="download-link" title="FG405A2 Display">link</a></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -290,6 +290,40 @@
             </p>
         </div>
     </footer>
+</body>
+
+<!-- Ensure header is never smaller than the header image: set min-height dynamically -->
+<script>
+    (function() {
+        function ensureHeaderMin() {
+            var img = document.querySelector('.site-header .header-logo');
+            var header = document.querySelector('.site-header');
+            if (!img || !header) return;
+
+            // Use rendered height so it matches CSS scaling (device width, responsive).
+            var h = img.getBoundingClientRect().height || img.naturalHeight || 0;
+            if (h > 0) {
+                header.style.minHeight = Math.ceil(h) + 'px';
+            }
+        }
+
+        // Run when image loads (covers cached and fresh loads)
+        var logo = document.querySelector('.site-header .header-logo');
+        if (logo) {
+            if (logo.complete) {
+                ensureHeaderMin();
+            } else {
+                logo.addEventListener('load', ensureHeaderMin);
+            }
+        }
+
+        // Also adjust on window resize (responsive layouts)
+        window.addEventListener('resize', function() {
+            // small timeout to let layout settle
+            setTimeout(ensureHeaderMin, 50);
+        });
+    })();
+</script>
 
 </body>
 
