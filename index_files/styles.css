@@ -38,7 +38,7 @@
 }
 .header-nav a:hover,
 .header-nav a:focus {
-    background-color: rgba(255,255,255,0.08);
+    background-color: rgba(255, 255, 255, 0.096);
     color: #ffffff;
     outline: none;
 }
@@ -287,9 +287,10 @@ body {
     font-weight: 700;
 }
 .resource-img {
-    max-width: 120px;
+    width: 100%;
     height: auto;
     display: block;
+    max-width: 100%;
 }
 .download-link {
     color: var(--accent-color);
